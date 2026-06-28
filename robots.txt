@@ -1,0 +1,27 @@
+# robots.txt for PLT College of Medicine website
+
+# Allow search engine crawlers
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for index/retrieval search features
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap link
+Sitemap: https://pltapcmr.edu.ph/sitemap.xml
