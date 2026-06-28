@@ -337,6 +337,7 @@
                 <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#programs">Curriculum</a>
                 <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#admissions">Admissions</a>
                 <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#campus">Resort Campus</a>
+                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#gallery">Gallery</a>
                 <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#faqs">FAQs</a>
                 <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-semibold font-body-md text-sm px-3 py-2 rounded-lg" href="#contact">Contact</a>
             </div>
@@ -370,6 +371,7 @@
                     <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#programs">Curriculum</a>
                     <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#admissions">Admissions</a>
                     <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#campus">Resort Campus</a>
+                    <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#gallery">Gallery</a>
                     <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#faqs">FAQs</a>
                     <a class="drawer-link border-b border-outline-variant/20 py-3 font-medium text-on-surface-variant dark:text-white hover:text-primary" href="#contact">Contact</a>
                 </div>
@@ -805,6 +807,273 @@
             </div>
         </section>
 
+        </section>
+
+        <!-- Campus Gallery Section -->
+        <section class="py-section-gap-md md:py-section-gap-lg bg-surface dark:bg-primary" id="gallery">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="font-label-caps text-label-caps text-gold-glare tracking-widest uppercase mb-3 block font-semibold">Campus Experience</span>
+                    <h2 class="font-headline-lg text-3xl md:text-4xl text-primary dark:text-white font-bold mb-5">Visual Tour of PLT College of Medicine</h2>
+                    <p class="font-body-lg text-base text-on-surface-variant dark:text-inverse-on-surface/80">
+                        Explore our state-of-the-art anatomy labs, classrooms, medical library, leisure grounds, and student hostels.
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button onclick="filterGallery('all', this)" class="gallery-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-primary text-white dark:bg-secondary dark:text-primary border-transparent">
+                        All Photos
+                    </button>
+                    <button onclick="filterGallery('academics', this)" class="gallery-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-white text-primary dark:bg-primary-container dark:text-white border-outline-variant/30 hover:bg-surface-variant/35">
+                        Academics & Labs
+                    </button>
+                    <button onclick="filterGallery('campus', this)" class="gallery-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-white text-primary dark:bg-primary-container dark:text-white border-outline-variant/30 hover:bg-surface-variant/35">
+                        Campus & Leisure
+                    </button>
+                    <button onclick="filterGallery('studentlife', this)" class="gallery-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-white text-primary dark:bg-primary-container dark:text-white border-outline-variant/30 hover:bg-surface-variant/35">
+                        Student Life & Hostels
+                    </button>
+                    <button onclick="filterGallery('clinical', this)" class="gallery-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border transition-all bg-white text-primary dark:bg-primary-container dark:text-white border-outline-variant/30 hover:bg-surface-variant/35">
+                        Clinical & Hospitals
+                    </button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Item 1: Entrance -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="campus" onclick="openLightbox('assets/plt medical college entrance.png', 'Medical College Entrance', 'Main gate and administrative building of PLT College of Medicine.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/plt medical college entrance.png" alt="PLT Medical College main entrance and administrative building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Campus</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Medical College Entrance</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Main gate and administrative building of PLT College of Medicine.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Anatomy Lab -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="academics" onclick="openLightbox('assets/anatomy lab in plt.png', 'Anatomy Laboratory', 'Advanced anatomy facilities equipped for student dissection and clinical study.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/anatomy lab in plt.png" alt="Anatomy dissecting laboratory equipped with dissection tools" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Academics</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Anatomy Laboratory</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Advanced anatomy facilities equipped for student dissection and clinical study.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Biochemistry -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="academics" onclick="openLightbox('assets/biochemistry classroom in plt.png', 'Biochemistry Lecture Hall', 'Modern multimedia classrooms facilitating interactive pre-clinical discussions.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/biochemistry classroom in plt.png" alt="Biochemistry classroom with projector screen and academic desks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Academics</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Biochemistry Lecture Hall</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Modern multimedia classrooms facilitating interactive pre-clinical discussions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Cadaver Lab -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="academics" onclick="openLightbox('assets/cadaver dissection lab in plt.png', 'Cadaver Dissection Facility', 'Specialized clinical anatomy lab for hands-on surgical simulations.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/cadaver dissection lab in plt.png" alt="Cadaver anatomy dissecting table and diagnostic training aids" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Academics</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Cadaver Dissection Facility</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Specialized clinical anatomy lab for hands-on surgical simulations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Cricket Ground -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="campus" onclick="openLightbox('assets/cricket ground in plt medical college.png', 'Resort Sports Grounds', 'Expansive green cricket ground and recreational fields for wellness.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/cricket ground in plt medical college.png" alt="Beautiful green cricket ground landscape at PLT medical college resort campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Campus</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Resort Sports Grounds</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Expansive green cricket ground and recreational fields for wellness.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Fresher Welcome -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="studentlife" onclick="openLightbox('assets/fresher welcome in plt medical college.png', 'Fresher Welcome Ceremony', 'Celebrating the arrival of our new international batch of students.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/fresher welcome in plt medical college.png" alt="Indian medical students celebrating orientation and orientation welcome ceremony" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Student Life</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Fresher Welcome Ceremony</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Celebrating the arrival of our new international batch of students.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Hostel room -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="studentlife" onclick="openLightbox('assets/girl in her hostel room in plt medical college.png', 'Student Hostel Accommodation', 'Premium, secure, and air-conditioned double sharing hostel facilities.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/girl in her hostel room in plt medical college.png" alt="Female student in a modern air-conditioned double hostel bedroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Student Life</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Student Hostel Room</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Premium, secure, and air-conditioned double sharing hostel facilities.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Graduation -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="studentlife" onclick="openLightbox('assets/indian medical student graduation in plt medical college.png', 'Convocation & Graduation', 'Our graduates celebrating success on the pathway to becoming physicians.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/indian medical student graduation in plt medical college.png" alt="Indian medical students during their graduation convocation celebrating with certificates" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Student Life</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Convocation & Graduation</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Our graduates celebrating success on the pathway to becoming physicians.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Indian Students -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="studentlife" onclick="openLightbox('assets/indian medical students in plt.png', 'Group Study Sessions', 'Collaborative peer group learning inside the university campus.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/indian medical students in plt.png" alt="Indian medical students studying together with books on the campus desks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Student Life</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Group Study Sessions</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Collaborative peer group learning inside the university campus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Internship Hospital -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="clinical" onclick="openLightbox('assets/internship hospital 2.png', 'Louis A. Tiam Medical Center', 'Affiliated training center for advanced clinical clerkship.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/internship hospital 2.png" alt="Louis A Tiam Medical Center facade showing clinical training entrance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Clinical</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Louis A. Tiam Medical Center</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Affiliated training center for advanced clinical clerkship.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 11: Library -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="academics" onclick="openLightbox('assets/new library.png', 'Medical Library', 'Vast collection of reference books and quiet reading terminals.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/new library.png" alt="New library containing shelves of books and computer study desks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Academics</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Medical Library</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Vast collection of reference books and quiet reading terminals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: Convention Hall -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="campus" onclick="openLightbox('assets/plt convention hall.png', 'PLT Convention Center', 'Modern multipurpose convention center for academic symposia.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/plt convention hall.png" alt="State of the art auditorium and convention hall at PLT medical college" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Campus</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">PLT Convention Center</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Modern multipurpose convention center for academic symposia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 13: Recreational Area -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="campus" onclick="openLightbox('assets/recreational area in plt.png', 'Student Recreation Lounge', 'Equipped leisure spaces to rest, socialize, and decompress.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/recreational area in plt.png" alt="Recreational area for medical students with relaxing seats and lounge layout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Campus</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Student Recreation Lounge</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Equipped leisure spaces to rest, socialize, and decompress.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 14: Hospital 4 -->
+                    <div class="gallery-item overflow-hidden rounded-xl border border-outline-variant/20 dark:border-outline/10 group cursor-pointer relative bg-white dark:bg-primary-container/30 transition-all duration-300 hover:shadow-lg shadow-sm" data-category="clinical" onclick="openLightbox('assets/training hospital 4.png', 'Region II Clinical Rotations', 'Primary tertiary government training hospital for hands-on medical practice.')">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="assets/training hospital 4.png" alt="Region II government hospital facade for clinical clerkship rotations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <span class="text-xs font-bold text-gold-glare uppercase tracking-wider mb-1">Clinical</span>
+                                <span class="material-symbols-outlined absolute top-4 right-4 bg-black/60 p-2 rounded-full text-sm">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-primary dark:text-white text-sm">Region II Clinical Rotations</h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/75 mt-1 line-clamp-2">Primary tertiary government training hospital for hands-on medical practice.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Lightbox Overlay -->
+        <div id="galleryLightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300 select-none">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-gold-glare transition-colors focus:outline-none z-10">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <button onclick="prevLightboxImage()" class="absolute left-4 md:left-8 text-white hover:text-gold-glare transition-colors focus:outline-none bg-black/40 p-2.5 rounded-full z-10 active:scale-95">
+                <span class="material-symbols-outlined text-4xl">chevron_left</span>
+            </button>
+            <button onclick="nextLightboxImage()" class="absolute right-4 md:right-8 text-white hover:text-gold-glare transition-colors focus:outline-none bg-black/40 p-2.5 rounded-full z-10 active:scale-95">
+                <span class="material-symbols-outlined text-4xl">chevron_right</span>
+            </button>
+            <div class="max-w-4xl max-h-[85vh] flex flex-col items-center p-2">
+                <img id="lightboxImage" src="" alt="" class="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl border border-white/10 animate-fade-in"/>
+                <h4 id="lightboxTitle" class="text-white text-base md:text-lg font-bold mt-4 text-center">Image Title</h4>
+                <p id="lightboxDesc" class="text-gray-400 text-xs md:text-sm mt-1 text-center max-w-xl">Image Description</p>
+            </div>
+        </div>
+
         <!-- Interactive FAQ Accordion Section -->
         <section class="py-section-gap-md md:py-section-gap-lg bg-surface-container-low dark:bg-primary-container/20" id="faqs">
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
@@ -1218,6 +1487,105 @@
                 return false;
             }
         }
+
+        // Gallery Filter Logic
+        function filterGallery(category, button) {
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white', 'dark:bg-secondary', 'dark:text-primary');
+                btn.classList.add('bg-white', 'text-primary', 'dark:bg-primary-container', 'dark:text-white', 'border-outline-variant/30');
+            });
+            button.classList.add('bg-primary', 'text-white', 'dark:bg-secondary', 'dark:text-primary');
+            button.classList.remove('bg-white', 'text-primary', 'dark:bg-primary-container', 'dark:text-white');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                    item.classList.add('animate-fade-in');
+                } else {
+                    item.classList.add('hidden');
+                    item.classList.remove('animate-fade-in');
+                }
+            });
+        }
+
+        // Lightbox state variables
+        let currentLightboxIndex = 0;
+        let visibleGalleryItems = [];
+
+        function openLightbox(imgSrc, title, desc) {
+            const lightbox = document.getElementById('galleryLightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            const lightboxDesc = document.getElementById('lightboxDesc');
+
+            const items = Array.from(document.querySelectorAll('.gallery-item:not(.hidden)'));
+            visibleGalleryItems = items.map(el => {
+                const img = el.querySelector('img');
+                return {
+                    src: img.getAttribute('src'),
+                    title: el.querySelector('h4').textContent,
+                    desc: el.querySelector('p').textContent
+                };
+            });
+
+            currentLightboxIndex = visibleGalleryItems.findIndex(item => item.src === imgSrc);
+
+            lightboxImg.src = imgSrc;
+            lightboxTitle.textContent = title;
+            lightboxDesc.textContent = desc;
+
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('galleryLightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function prevLightboxImage() {
+            if (visibleGalleryItems.length === 0) return;
+            currentLightboxIndex = (currentLightboxIndex - 1 + visibleGalleryItems.length) % visibleGalleryItems.length;
+            updateLightboxContent();
+        }
+
+        function nextLightboxImage() {
+            if (visibleGalleryItems.length === 0) return;
+            currentLightboxIndex = (currentLightboxIndex + 1) % visibleGalleryItems.length;
+            updateLightboxContent();
+        }
+
+        function updateLightboxContent() {
+            const item = visibleGalleryItems[currentLightboxIndex];
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            const lightboxDesc = document.getElementById('lightboxDesc');
+
+            lightboxImg.src = item.src;
+            lightboxTitle.textContent = item.title;
+            lightboxDesc.textContent = item.desc;
+        }
+
+        document.getElementById('galleryLightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard support for Lightbox
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('galleryLightbox');
+            if (lightbox && !lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevLightboxImage();
+                if (e.key === 'ArrowRight') nextLightboxImage();
+            }
+        });
 
         // Form Submit Handler
         function handleFormSubmit(event) {
