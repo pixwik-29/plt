@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PLT College of Medicine | Premium Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1f",
+                        "outline-variant": "#c3c6d1",
+                        "tertiary-fixed": "#ffdbca",
+                        "inverse-on-surface": "#f1f0f5",
+                        "on-tertiary-fixed": "#341100",
+                        "surface-bright": "#f9f9fe",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "surface-container-low": "#f4f3f8",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dad9de",
+                        "tertiary": "#381300",
+                        "tertiary-fixed-dim": "#ffb690",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-error": "#ffffff",
+                        "secondary": "#775a19",
+                        "primary": "#001e40",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed-variant": "#723610",
+                        "surface-variant": "#e2e2e7",
+                        "secondary-container": "#fed488",
+                        "tertiary-container": "#592300",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "glass-overlay": "rgba(255, 255, 255, 0.7)",
+                        "secondary-fixed": "#ffdea5",
+                        "on-surface-variant": "#43474f",
+                        "charcoal-text": "#333333",
+                        "background": "#f9f9fe",
+                        "surface-tint": "#3a5f94",
+                        "primary-fixed": "#d5e3ff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-container-highest": "#e2e2e7",
+                        "primary-container": "#003366",
+                        "surface-container": "#eeedf2",
+                        "on-surface": "#1a1c1f",
+                        "on-primary-fixed": "#001b3c",
+                        "gold-glare": "#D4AF37",
+                        "on-secondary-container": "#785a1a",
+                        "inverse-primary": "#a7c8ff",
+                        "outline": "#737780",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e8e8ed",
+                        "on-tertiary-container": "#d8885c",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3034",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#799dd6",
+                        "on-error-container": "#93000a",
+                        "surface": "#f9f9fe",
+                        "error": "#ba1a1a",
+                        "ivory-base": "#F9F9F9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-md": "80px",
+                        "element-gap": "16px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "section-gap-lg": "120px"
+                    },
+                    "fontFamily": {
+                        "display-hero-mobile": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-hero": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-hero-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-hero": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-gold-glare selection:text-primary">
+<!-- TopNavBar -->
+<nav class="bg-glass-overlay dark:bg-primary-container/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 dark:border-outline/20 shadow-sm w-full">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">PLT College of Medicine</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed/10 px-3 py-2 rounded-DEFAULT" href="#">Programs</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed/10 px-3 py-2 rounded-DEFAULT" href="#">Admissions</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed/10 px-3 py-2 rounded-DEFAULT" href="#">Research</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed/10 px-3 py-2 rounded-DEFAULT" href="#">Campus Life</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary-fixed/10 px-3 py-2 rounded-DEFAULT" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-primary hover:text-gold-glare transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<a class="hidden md:inline-flex bg-primary text-white font-body-md text-body-md px-6 py-2.5 rounded-lg hover:border-b-2 hover:border-gold-glare active:translate-y-[2px] transition-all" href="#apply">Apply Now</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat absolute inset-0" data-alt="A breathtaking aerial view of a modern medical university campus bathed in warm, golden-hour sunlight. The architecture is a blend of traditional elite collegiate style and futuristic glass facades, surrounded by lush green landscapes. A sense of prestige, high technology, and global excellence permeates the scene. The lighting is soft yet brilliant, creating a luxurious and aspirational light-mode aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiJeYW62MGYx7h8eHFCs7euvLEw9WkYG6QuG2PYctpl1jEppCEIf9I-IbdEjTSERcjwNwibYoZig1lh4UvSxyi1ysA-nOypURd1COHs21IuShhPPJe9gXUyTg47bbJKBZ6Hw8KqxC7n0hfIaTAjqQDqIPlOsOWCjRlX2biuMn96ElbNViOOosSFKeuX8bWbf8AtWK_utf6bP8XVw3oCgbgbUcU7BNls8EbtL_H7P4EF4PzawGoZyP9Hg')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 flex flex-col justify-center items-start pt-20">
+<span class="font-label-caps text-label-caps text-gold-glare uppercase tracking-widest mb-4 inline-block bg-primary/20 px-3 py-1 rounded-full backdrop-blur-sm border border-gold-glare/30">Admissions Open 2024-2025</span>
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-white mb-6 text-shadow-sm max-w-4xl">
+                        Global Medical Excellence in the Heart of the Philippines
+                    </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mb-10 max-w-2xl text-shadow-sm opacity-90">
+                        Join a legacy of extraordinary minds and compassionate hearts. Experience world-class clinical training in Asia Pacific's first medical college located in a premier wellness resort.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex justify-center items-center bg-primary text-white font-body-md text-body-md px-8 py-4 rounded-lg border border-transparent hover:border-gold-glare hover:border-b-4 active:translate-y-[2px] transition-all shadow-lg hover:shadow-xl" href="#apply">
+                            Apply for 2025
+                            <span class="material-symbols-outlined ml-2" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+<a class="inline-flex justify-center items-center glass-panel text-white font-body-md text-body-md px-8 py-4 rounded-lg border border-white/20 hover:bg-white/10 transition-all" href="#programs">
+                            Explore Programs
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (Bento Grid) -->
+<section class="py-section-gap-md md:py-section-gap-lg bg-surface-container-low relative -mt-20 z-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Stat Card 1 -->
+<div class="bg-ivory-base p-8 rounded-xl border border-outline-variant/30 shadow-[0_20px_40px_rgba(0,0,0,0.03)] hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gold-glare transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-primary mb-4 text-4xl" style="font-variation-settings: 'FILL' 0;">history_edu</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">30+ Years</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Legacy of Excellence in Medical Education</p>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-ivory-base p-8 rounded-xl border border-outline-variant/30 shadow-[0_20px_40px_rgba(0,0,0,0.03)] hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gold-glare transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-primary mb-4 text-4xl" style="font-variation-settings: 'FILL' 0;">verified</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Top Tier</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Consistent High Passing Rates in Licensure Exams</p>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-ivory-base p-8 rounded-xl border border-outline-variant/30 shadow-[0_20px_40px_rgba(0,0,0,0.03)] hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gold-glare transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-primary mb-4 text-4xl" style="font-variation-settings: 'FILL' 0;">biotech</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">World-Class</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced Facilities &amp; Clinical Training Labs</p>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-primary p-8 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden group flex flex-col justify-between">
+<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gold-glare/20 to-transparent opacity-50"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-gold-glare mb-4 text-4xl" style="font-variation-settings: 'FILL' 0;">spa</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Wellness Resort</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/80">Asia Pacific's first medical college in a tranquil resort setting</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs Section -->
+<section class="py-section-gap-md md:py-section-gap-lg bg-surface relative" id="programs">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="mb-16 md:w-2/3">
+<span class="font-label-caps text-label-caps text-gold-glare tracking-widest uppercase mb-4 block">Academic Excellence</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Doctor of Medicine (M.D.)</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our flagship four-year program transforms aspiring students into professionally competent, socially responsible, and compassionate physicians.
+                    </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Featured Program Card -->
+<div class="lg:col-span-8 bg-ivory-base rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col md:flex-row group hover:shadow-[0_20px_40px_rgba(0,0,0,0.06)] transition-all duration-300 relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-gold-glare z-10"></div>
+<div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic shot of a modern, world-class medical auditorium. An esteemed professor is lecturing to a group of attentive international students. The room has warm wood paneling and sophisticated lighting. High-end university atmosphere, aspirational, professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH0RoLeTgRtDWfoKVF3mduYTFtniRvT1fslmey0JYCPLFB2klKbhx2GxO74XLlQHdu0UEe2d2FlPC0V6JiLfvPnrzWpqPEutalSpZ2Wr9B883ESW8Rv6PbVsov1hTKHAMVk-thimRUxs21dkNZoaHtuQWOiUYoc1_OXSpAdYFpjicYCgdrVprrG5_E73hJMQZnvBPDBq3suLzXL-r6Zr46q0NcI0HnZiiKJKBPRMaIp42_2Umj3KTbqw"/>
+</div>
+<div class="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+<div class="inline-flex items-center px-3 py-1 bg-secondary-fixed-dim/20 text-primary font-label-caps text-label-caps rounded-full w-fit mb-4">
+                                Core Program
+                            </div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Clinical Training Excellence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                Experience hands-on clinical training at the Region 2 Trauma &amp; Medical Center. Our curriculum emphasizes breakthrough medical innovations alongside sustainable programs for under-served communities.
+                            </p>
+<a class="inline-flex items-center text-primary font-semibold hover:text-gold-glare transition-colors w-fit group/link" href="#">
+                                Explore Curriculum 
+                                <span class="material-symbols-outlined ml-2 group-hover/link:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Side Cards -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<div class="bg-primary-container p-8 rounded-2xl text-white h-full flex flex-col justify-center relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-gold-glare/10 rounded-full blur-2xl"></div>
+<span class="material-symbols-outlined text-gold-glare mb-4 text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h4 class="font-headline-md text-headline-md mb-3 text-shadow-sm">International Students</h4>
+<p class="font-body-md text-body-md text-white/80 mb-6">Dedicated support through our Office of International Affairs, ensuring a seamless transition and vibrant campus life.</p>
+<a class="inline-block mt-auto text-gold-glare hover:text-white transition-colors border-b border-gold-glare/30 hover:border-white w-fit pb-1" href="#">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-background full-width pt-section-gap-md pb-12 bg-primary dark:bg-on-background border-t border-secondary/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<a class="font-headline-md text-headline-md text-secondary-fixed block mb-6" href="#">PLT College of Medicine</a>
+<p class="font-body-md text-body-md text-primary-fixed-dim/80 mb-4">Solano, Nueva Vizcaya<br/>info@pltapcmr.edu.ph</p>
+</div>
+<!-- Links Column -->
+<div class="col-span-1">
+<h4 class="font-body-lg text-body-lg text-white font-semibold mb-4">Academics</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Doctor of Medicine</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Admissions</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">International Students</a></li>
+</ul>
+</div>
+<!-- Links Column -->
+<div class="col-span-1">
+<h4 class="font-body-lg text-body-lg text-white font-semibold mb-4">Resources</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Faculty Portal</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Student Email</a></li>
+<li><a class="text-primary-fixed-dim/80 dark:text-surface-variant/70 hover:text-secondary-fixed transition-colors hover:translate-x-1 duration-200 inline-block" href="#">Career Center</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-body-lg text-body-lg text-white font-semibold mb-4">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary-fixed hover:text-primary transition-all" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">share</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-white/10">
+<p class="font-body-md text-body-md text-primary-fixed-dim/60 text-center text-sm">
+                © 2024 PLT College of Medicine. All Rights Reserved. Accredited by PAASCU and CHED.
+            </p>
+</div>
+</footer>
+</body></html>
