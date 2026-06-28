@@ -158,6 +158,17 @@
             border-color: #ef4444 !important;
             box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
         }
+        /* Custom scrollbar for disciplines list */
+        .max-h-\[300px\]::-webkit-scrollbar {
+            width: 4px;
+        }
+        .max-h-\[300px\]::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+        .max-h-\[300px\]::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 99px;
+        }
         .animate-fade-in {
             animation: fadeIn 0.4s ease-out forwards;
         }
@@ -219,7 +230,7 @@
           "@type": "EducationalOccupationalProgram",
           "@id": "https://pltapcmr.edu.ph/#mdprogram",
           "name": "Doctor of Medicine (M.D.)",
-          "description": "A prestigious four-year professional program transforming aspiring students into compassionate, clinically competent, and globally recognized physicians.",
+          "description": "A prestigious 5.5-year professional program designed in accordance with the latest National Medical Commission (NMC) guidelines, transforming aspiring students into compassionate, clinically competent, and globally recognized physicians.",
           "provider": {
             "@id": "https://pltapcmr.edu.ph/#university"
           },
@@ -228,7 +239,7 @@
             "National Medical Admission Test (NMAT) Percentile Rank of 40 or higher"
           ],
           "educationalCredentialAwarded": "Doctor of Medicine (M.D.)",
-          "timeToComplete": "P4Y",
+          "timeToComplete": "P5Y6M",
           "programType": "Professional Degree",
           "offers": {
             "@type": "Offer",
@@ -509,9 +520,9 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
                     <div class="lg:col-span-8">
                         <span class="font-label-caps text-label-caps text-gold-glare tracking-widest uppercase mb-3 block font-semibold">Academic Excellence</span>
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary dark:text-white mb-5 font-bold">Doctor of Medicine (M.D.) Program</h2>
+                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary dark:text-white mb-5 font-bold">5.5-Year Doctor of Medicine (M.D.) Program</h2>
                         <p class="font-body-lg text-base md:text-lg text-on-surface-variant dark:text-inverse-on-surface/80 max-w-3xl">
-                            Our flagship 4-year curriculum is approved by CHED and built to cultivate clinical competence, analytical inquiry, and compassionate primary care.
+                            Our flagship 5.5-year Doctor of Medicine (M.D.) Program is designed in accordance with the latest National Medical Commission (NMC) guidelines for Indian students pursuing medical education abroad. The curriculum provides comprehensive medical education through integrated basic sciences, clinical sciences, hospital-based clinical rotations, and a compulsory internship, preparing graduates for global medical practice and eligibility under NMC regulations.
                         </p>
                     </div>
                 </div>
@@ -523,93 +534,136 @@
                         
                         <!-- Tab Controls -->
                         <div class="flex flex-wrap gap-2 mb-6 border-b border-outline-variant/30 pb-4">
-                            <button onclick="switchTab('year1')" id="tabBtn-year1" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-white border-b-2 border-gold-glare transition-all">Year 1: Foundation</button>
-                            <button onclick="switchTab('year2')" id="tabBtn-year2" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 2: disease</button>
-                            <button onclick="switchTab('year3')" id="tabBtn-year3" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 3: Clinical</button>
-                            <button onclick="switchTab('year4')" id="tabBtn-year4" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 4: Clerkship</button>
+                            <button onclick="switchTab('year1')" id="tabBtn-year1" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-white border-b-2 border-gold-glare transition-all">Year 1</button>
+                            <button onclick="switchTab('year2')" id="tabBtn-year2" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 2</button>
+                            <button onclick="switchTab('year3')" id="tabBtn-year3" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 3</button>
+                            <button onclick="switchTab('year4')" id="tabBtn-year4" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 4</button>
+                            <button onclick="switchTab('year5')" id="tabBtn-year5" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-surface dark:bg-white/10 text-on-surface-variant dark:text-white transition-all">Year 5</button>
                         </div>
 
                         <!-- Tab Content 1: Year 1 -->
                         <div id="tabContent-year1" class="tab-content flex-1 animate-fade-in">
-                            <h4 class="text-lg font-bold text-primary dark:text-white mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-gold-glare">school</span> Basic Sciences Foundation
+                            <h4 class="text-lg font-bold text-primary dark:text-white mb-1 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-gold-glare">school</span> Pre-Clinical Foundation
                             </h4>
-                            <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/80 mb-5 leading-relaxed">
-                                Provides basic principles in anatomy, physiology, and pathology. Students analyze human biology at structural, microscopic, and biochemical levels.
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/80 mb-5">
+                                Build a strong scientific foundation through the fundamental medical sciences essential for understanding human health and disease.
                             </p>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Gross & Microscopic Anatomy</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Physiology & Neuroanatomy</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Biochemistry & Nutrition</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Preventive & Community Medicine</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Human Anatomy</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Histology & Embryology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Human Physiology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Biochemistry</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Community Medicine (Introduction)</div>
                             </div>
                         </div>
 
                         <!-- Tab Content 2: Year 2 -->
                         <div id="tabContent-year2" class="tab-content hidden flex-1 animate-fade-in">
-                            <h4 class="text-lg font-bold text-primary dark:text-white mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-gold-glare">biotech</span> Pharmacology & Disease Processes
+                            <h4 class="text-lg font-bold text-primary dark:text-white mb-1 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-gold-glare">biotech</span> Para-Clinical Sciences
                             </h4>
-                            <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/80 mb-5 leading-relaxed">
-                                Focuses on general pathology, pharmacology, and therapeutics. Introduces students to abnormal physical structures and initial clinical diagnostic methods.
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/80 mb-5">
+                                Develop diagnostic reasoning by understanding disease mechanisms, pharmacological principles, and laboratory medicine.
                             </p>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General & Systemic Pathology</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pharmacology & Therapeutics</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Medical Microbiology & Parasitology</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Clinical Pathology & Physical Diagnosis</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pathology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Microbiology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pharmacology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Forensic Medicine & Toxicology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Community Medicine</div>
                             </div>
                         </div>
 
                         <!-- Tab Content 3: Year 3 -->
                         <div id="tabContent-year3" class="tab-content hidden flex-1 animate-fade-in">
-                            <h4 class="text-lg font-bold text-primary dark:text-white mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-gold-glare">stethoscope</span> Clinical Medicine & Specialties
+                            <h4 class="text-lg font-bold text-primary dark:text-white mb-1 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-gold-glare">stethoscope</span> Early Clinical Sciences
                             </h4>
-                            <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/80 mb-5 leading-relaxed">
-                                Application of clinical principles directly to diagnosis, clinical laboratory diagnostics, surgical interventions, and specialty management.
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/80 mb-5">
+                                Transition into patient-centered learning with integrated clinical exposure across major medical specialties.
                             </p>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Internal Medicine & Pediatrics</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General Surgery & Orthopedics</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Obstetrics & Gynecology</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Ophthalmology & Otorhinolaryngology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General Medicine</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General Surgery</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Obstetrics & Gynaecology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pediatrics</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Ophthalmology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Otorhinolaryngology (ENT)</div>
                             </div>
                         </div>
 
                         <!-- Tab Content 4: Year 4 -->
                         <div id="tabContent-year4" class="tab-content hidden flex-1 animate-fade-in">
-                            <h4 class="text-lg font-bold text-primary dark:text-white mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-gold-glare">clinical_notes</span> Clinical Clerkship Rotations
+                            <h4 class="text-lg font-bold text-primary dark:text-white mb-1 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-gold-glare">clinical_notes</span> Advanced Clinical Training
                             </h4>
-                            <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/80 mb-5 leading-relaxed">
-                                A 12-month rotation program at our accredited regional teaching hospital affiliations. Clerkship trains students in active clinical duty, emergencies, and patient consultations.
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/80 mb-5">
+                                Strengthen clinical competence through multidisciplinary patient care, bedside teaching, and specialty rotations.
                             </p>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Region II Trauma and Medical Center</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> PLTCI Louis A. Tiam Medical Center</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Community Health Center Integrations</div>
-                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pediatric & Neonatal Critical Care</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Orthopaedics</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Psychiatry</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Dermatology, Venereology & Leprosy (DVL)</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Respiratory Medicine</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Anaesthesiology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Radiodiagnosis</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Emergency Medicine</div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 5: Year 5 -->
+                        <div id="tabContent-year5" class="tab-content hidden flex-1 animate-fade-in">
+                            <h4 class="text-lg font-bold text-primary dark:text-white mb-1 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-gold-glare">medical_services</span> Compulsory Clinical Clerkship & Internship
+                            </h4>
+                            <p class="text-xs text-on-surface-variant dark:text-inverse-on-surface/80 mb-5">
+                                Complete supervised hospital-based clinical rotations across core departments, developing practical skills, professional ethics, patient communication, and independent clinical decision-making.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General Medicine</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> General Surgery</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Obstetrics & Gynaecology</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Pediatrics</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Community Medicine</div>
+                                <div class="flex items-center gap-3 p-3 bg-white dark:bg-primary-container rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-secondary text-base">check</span> Emergency & Elective Rotations</div>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Lateral Support Card / International Desk -->
+                    <!-- Lateral Support Card / Comprehensive Medical Curriculum -->
                     <div class="lg:col-span-4 flex flex-col gap-6">
                         <div class="bg-primary-container text-white p-8 rounded-2xl flex flex-col justify-between relative overflow-hidden h-full shadow-lg border border-white/10">
                             <div class="absolute -right-10 -top-10 w-44 h-44 bg-gold-glare/10 rounded-full blur-3xl"></div>
                             <div>
-                                <span class="material-symbols-outlined text-gold-glare mb-4 text-4xl">groups</span>
-                                <h4 class="font-headline-md text-2xl mb-4 font-bold text-shadow-sm">Office of International Student Affairs</h4>
-                                <p class="font-body-md text-sm text-white/80 leading-relaxed mb-6">
-                                    We assist international students with visas, accommodation, transcript evaluation, and clinical acclimatization to ensure a supportive academic journey.
+                                <span class="material-symbols-outlined text-gold-glare mb-4 text-4xl">inventory_2</span>
+                                <h4 class="font-headline-md text-xl mb-3 font-bold text-shadow-sm leading-tight">Comprehensive Medical Curriculum</h4>
+                                <p class="text-xs text-white/80 leading-relaxed mb-6">
+                                    The program incorporates the core subjects prescribed under the National Medical Commission (NMC) for Indian medical graduates, ensuring a comprehensive education across 19 major medical disciplines:
                                 </p>
+                                <div class="max-h-[300px] overflow-y-auto pr-2 space-y-1.5 text-xs text-white/90">
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Anatomy</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Physiology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Biochemistry</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Pathology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Microbiology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Pharmacology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Forensic Medicine & Toxicology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Community Medicine</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> General Medicine</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> General Surgery</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Obstetrics & Gynaecology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Pediatrics</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Orthopaedics</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Ophthalmology</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Otorhinolaryngology (ENT)</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Psychiatry</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Dermatology, Venereology & Leprosy (DVL)</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Respiratory Medicine</div>
+                                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-glare"></span> Anaesthesiology</div>
+                                </div>
                             </div>
-                            <a class="inline-flex items-center text-gold-glare hover:text-white transition-all font-bold text-sm border-b border-gold-glare/30 hover:border-white w-fit pb-1" href="#contact">
-                                Contact International Desk
-                                <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
-                            </a>
                         </div>
                     </div>
                 </div>
