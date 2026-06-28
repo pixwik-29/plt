@@ -7,7 +7,7 @@
     <!-- Premium SEO Metadata -->
     <title>PLT College of Medicine | Premium Doctor of Medicine (M.D.) Program</title>
     <meta name="description" content="Discover the premier Doctor of Medicine (M.D.) program at PLTCI College of Medicine in Solano, Nueva Vizcaya. Asia Pacific's first medical school located in a wellness resort environment. Inquire now!"/>
-    <meta name="keywords" content="PLT College of Medicine, PLTCI APCMR, Doctor of Medicine Philippines, Medical School Solano, Wellness Resort Campus, NMAT requirements Philippines, Study Medicine Asia Pacific"/>
+    <meta name="keywords" content="PLT College of Medicine, PLTCI APCMR, Doctor of Medicine Philippines, Medical School Solano, Wellness Resort Campus, NEET eligibility medical school, Physics Chemistry Biology 50 percent, Study Medicine Asia Pacific"/>
     <meta name="robots" content="index, follow"/>
     <link rel="canonical" href="https://pltapcmr.edu.ph"/>
 
@@ -236,7 +236,8 @@
           },
           "programPrerequisites": [
             "Completion of a Baccalaureate (Undergraduate) Degree",
-            "National Medical Admission Test (NMAT) Percentile Rank of 40 or higher"
+            "NEET Qualification (for Indian National Students)",
+            "Minimum 50% aggregate marks in Physics, Chemistry, and Biology (PCB)"
           ],
           "educationalCredentialAwarded": "Doctor of Medicine (M.D.)",
           "timeToComplete": "P5Y6M",
@@ -268,10 +269,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is the minimum NMAT score required for admission to PLT College of Medicine?",
+              "name": "What are the NEET and PCB eligibility requirements for PLT College of Medicine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Applicants must achieve a percentile rank of 40 or better on the National Medical Admission Test (NMAT) to be eligible for the Doctor of Medicine (M.D.) program."
+                "text": "Indian applicants must be NEET-qualified and have obtained at least 50% aggregate marks in Physics, Chemistry, and Biology (PCB) in high school/pre-university."
               }
             },
             {
@@ -695,8 +696,8 @@
                             <div class="flex items-start gap-4">
                                 <div class="w-8 h-8 rounded-full bg-primary/10 dark:bg-white/10 border border-gold-glare/30 text-primary dark:text-gold-glare flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</div>
                                 <div>
-                                    <h4 class="font-semibold text-primary dark:text-white text-base">NMAT Percentile Score &ge; 40</h4>
-                                    <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/70 mt-1">Must submit a valid National Medical Admission Test (NMAT) scorecard with a percentile rank of 40 or higher.</p>
+                                    <h4 class="font-semibold text-primary dark:text-white text-base">NEET Eligibility & Science Qualifications</h4>
+                                    <p class="text-sm text-on-surface-variant dark:text-inverse-on-surface/70 mt-1">Indian students must be NEET qualified. All applicants must have obtained at least 50% aggregate marks in Physics, Chemistry, and Biology (PCB).</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -735,8 +736,16 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="checkerNMAT" class="block text-xs font-bold uppercase tracking-wider text-primary dark:text-gold-glare mb-2">NMAT Percentile Score</label>
-                                <input type="number" id="checkerNMAT" min="1" max="99" placeholder="Enter NMAT Percentile (e.g. 50)" class="w-full bg-white dark:bg-primary-container border border-outline-variant/30 dark:border-outline/20 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:focus:ring-gold-glare transition-all"/>
+                                <label for="checkerNEET" class="block text-xs font-bold uppercase tracking-wider text-primary dark:text-gold-glare mb-2">NEET Qualification Status</label>
+                                <select id="checkerNEET" class="w-full bg-white dark:bg-primary-container border border-outline-variant/30 dark:border-outline/20 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:focus:ring-gold-glare transition-all">
+                                    <option value="qualified">Qualified / Cleared NEET</option>
+                                    <option value="not_qualified">Not Qualified / Not taken NEET</option>
+                                    <option value="exempt">Not Indian National (NEET Exempt)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="checkerPCB" class="block text-xs font-bold uppercase tracking-wider text-primary dark:text-gold-glare mb-2">PCB Aggregate Percentage (Physics, Chem, Biology)</label>
+                                <input type="number" id="checkerPCB" min="1" max="100" placeholder="Enter PCB aggregate % (e.g. 55)" class="w-full bg-white dark:bg-primary-container border border-outline-variant/30 dark:border-outline/20 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:focus:ring-gold-glare transition-all"/>
                             </div>
                             <button type="button" onclick="calculateEligibility()" class="w-full bg-primary dark:bg-secondary text-white dark:text-primary font-bold py-3.5 rounded-lg active:translate-y-[1px] transition-all hover:bg-primary-container dark:hover:bg-gold-glare shadow-md mt-4">
                                 Evaluate Eligibility
@@ -815,11 +824,11 @@
                         <!-- FAQ 1 -->
                         <div class="bg-ivory-base dark:bg-primary-container/40 border border-outline-variant/20 dark:border-outline/10 rounded-xl overflow-hidden shadow-sm">
                             <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center p-6 text-left font-semibold text-primary dark:text-white focus:outline-none select-none">
-                                <span class="text-sm md:text-base">What is the minimum NMAT score required?</span>
+                                <span class="text-sm md:text-base">What are the NEET eligibility and science score criteria?</span>
                                 <span id="faqIcon-1" class="material-symbols-outlined text-gold-glare transition-transform duration-300">add</span>
                             </button>
                             <div id="faqAnswer-1" class="hidden px-6 pb-6 text-sm text-on-surface-variant dark:text-inverse-on-surface/80 border-t border-outline-variant/10 pt-4 leading-relaxed">
-                                Applicants must achieve a percentile rank score of **40 or higher** on the National Medical Admission Test (NMAT) to qualify for admission.
+                                Indian students must be NEET qualified. Additionally, applicants must have achieved at least a **50% aggregate score** in Physics, Chemistry, and Biology (PCB) in high school or pre-university studies.
                             </div>
                         </div>
                         <!-- FAQ 2 -->
@@ -924,8 +933,8 @@
                                     <span class="text-xs text-red-500 mt-1 hidden" id="err-formPhone">Please enter a valid phone number (digits and optional country code).</span>
                                 </div>
                                 <div>
-                                    <label for="formNMAT" class="block text-xs font-semibold text-primary dark:text-gold-glare uppercase tracking-wider mb-2">NMAT Percentile Score (If taken)</label>
-                                    <input type="number" id="formNMAT" min="1" max="99" placeholder="e.g. 45" class="w-full bg-white dark:bg-primary-container border border-outline-variant/30 dark:border-outline/20 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:focus:ring-gold-glare transition-all"/>
+                                    <label for="formNEET" class="block text-xs font-semibold text-primary dark:text-gold-glare uppercase tracking-wider mb-2">NEET Score / Science PCB %</label>
+                                    <input type="text" id="formNEET" placeholder="e.g. NEET Qualified, 65% PCB" class="w-full bg-white dark:bg-primary-container border border-outline-variant/30 dark:border-outline/20 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:focus:ring-gold-glare transition-all"/>
                                 </div>
                             </div>
                             <div>
@@ -1104,22 +1113,24 @@
             }
         }
 
-        // NMAT Eligibility Calculator
+        // NEET & PCB Eligibility Calculator
         function calculateEligibility() {
             const degreeSelect = document.getElementById('checkerDegree');
-            const nmatInput = document.getElementById('checkerNMAT');
+            const neetSelect = document.getElementById('checkerNEET');
+            const pcbInput = document.getElementById('checkerPCB');
             const resultBox = document.getElementById('checkerResult');
 
             const degreeValue = degreeSelect.value;
-            const nmatScore = parseInt(nmatInput.value);
+            const neetValue = neetSelect.value;
+            const pcbScore = parseInt(pcbInput.value);
 
-            if (isNaN(nmatScore) || nmatScore < 1 || nmatScore > 99) {
+            if (isNaN(pcbScore) || pcbScore < 1 || pcbScore > 100) {
                 resultBox.className = "mt-6 p-4 rounded-xl border border-red-500 bg-red-500/10 text-red-700 dark:text-red-300 text-sm animate-fade-in";
                 resultBox.innerHTML = `
                     <div class="flex items-start gap-2">
                         <span class="material-symbols-outlined shrink-0">error</span>
                         <div>
-                            <strong class="font-bold">Invalid NMAT Score:</strong> Please input a valid percentile rank between 1 and 99.
+                            <strong class="font-bold">Invalid PCB Score:</strong> Please input a valid percentage score between 1 and 100.
                         </div>
                     </div>
                 `;
@@ -1139,13 +1150,23 @@
                         </div>
                     </div>
                 `;
-            } else if (nmatScore < 40) {
+            } else if (neetValue === 'not_qualified') {
                 resultBox.className = "mt-6 p-4 rounded-xl border border-yellow-500 bg-yellow-500/10 text-yellow-800 dark:text-yellow-300 text-sm animate-fade-in";
                 resultBox.innerHTML = `
                     <div class="flex items-start gap-2">
                         <span class="material-symbols-outlined shrink-0">warning</span>
                         <div>
-                            <strong class="font-bold">NMAT Score Below Cutoff:</strong> The minimum required score is **40 percentile**. You can retake the NMAT to improve your score, or consult our admissions desk for special pathway exceptions.
+                            <strong class="font-bold">NEET Qualification Required:</strong> Indian nationals must hold a valid NEET-qualified status. Please contact our admissions desk for advice on retakes or exemptions.
+                        </div>
+                    </div>
+                `;
+            } else if (pcbScore < 50) {
+                resultBox.className = "mt-6 p-4 rounded-xl border border-yellow-500 bg-yellow-500/10 text-yellow-800 dark:text-yellow-300 text-sm animate-fade-in";
+                resultBox.innerHTML = `
+                    <div class="flex items-start gap-2">
+                        <span class="material-symbols-outlined shrink-0">warning</span>
+                        <div>
+                            <strong class="font-bold">PCB Percentage Below 50%:</strong> The minimum aggregate score in Physics, Chemistry, and Biology (PCB) is **50%**. Please coordinate with our admissions desk to check alternate pathway options.
                         </div>
                     </div>
                 `;
@@ -1155,7 +1176,7 @@
                     <div class="flex items-start gap-2">
                         <span class="material-symbols-outlined shrink-0">check_circle</span>
                         <div>
-                            <strong class="font-bold">Eligible for Admission!</strong> You meet the primary qualifications (NMAT rank ${nmatScore} &ge; 40 and baccalaureate status). Please complete our contact form below to coordinate document submission.
+                            <strong class="font-bold">Eligible for Admission!</strong> You meet the required criteria (NEET-qualified/exempt, PCB score of ${pcbScore}% &ge; 50%, and completed pre-med degree). Please fill out the contact form below to begin document submission.
                         </div>
                     </div>
                 `;
