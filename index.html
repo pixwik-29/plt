@@ -1527,6 +1527,16 @@
                 // Fire Google Ads conversion event
                 gtag('event', 'conversion', {'send_to': 'AW-11270416948/Ek5XCKuN0uIZELTUk_4p'});
 
+                // Submit lead to EduPath CRM
+                submitEduPathLead({
+                    name:           document.getElementById('formName').value.trim(),
+                    email:          document.getElementById('formEmail').value.trim(),
+                    phone:          document.getElementById('formPhone').value.trim(),
+                    neetMarks:      document.getElementById('formNEET').value.trim() || null,
+                    budget:         null,
+                    prefDestination: document.getElementById('formProgram').value
+                });
+
                 // Show Success Toast
                 const toast = document.getElementById('successToast');
                 const progress = document.getElementById('toastProgress');
@@ -1558,6 +1568,32 @@
                 };
             }
         }
+    </script>
+
+    <!-- EduPath Lead Ingestion Form Script -->
+    <script>
+    async function submitEduPathLead(leadData) {
+        try {
+            const response = await fetch('https://crm.perfectscholar.com/api/webhook', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name:                 leadData.name,
+                    phone:                leadData.phone,
+                    email:                leadData.email,
+                    neet_marks:           leadData.neetMarks,
+                    budget:               leadData.budget,
+                    preferred_destination: leadData.prefDestination,
+                    course:               'MBBS', // Fixed course selection configured in CRM Settings
+                    lead_source:          'Website Form',
+                    campaign_name:        'Direct Organic Inbound'
+                })
+            });
+            return await response.json();
+        } catch (err) {
+            console.error('Lead ingestion failed:', err);
+        }
+    }
     </script>
 </body>
 </html>
