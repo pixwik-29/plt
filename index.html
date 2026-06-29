@@ -1524,6 +1524,9 @@
             const isMessageValid = validateField(messageEl, validateMessage);
 
             if (isNameValid && isEmailValid && isPhoneValid && isMessageValid) {
+                // Fire Google Ads conversion event
+                gtag('event', 'conversion', {'send_to': 'AW-11270416948/Ek5XCKuN0uIZELTUk_4p'});
+
                 // Show Success Toast
                 const toast = document.getElementById('successToast');
                 const progress = document.getElementById('toastProgress');
