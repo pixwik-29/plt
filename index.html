@@ -1574,7 +1574,7 @@
     <script>
     async function submitEduPathLead(leadData) {
         try {
-            const response = await fetch('https://crm.perfectscholar.com/api/webhook', {
+            const response = await fetch('https://crm.perfectscholar.com/api/lead-proxy', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
