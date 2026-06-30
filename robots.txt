@@ -1,27 +1,105 @@
-# robots.txt for PLT College of Medicine website
+# robots.txt for PLT College of Medicine (pltapcmr.edu.ph)
+# Last updated: 2026-06-30
 
-# Allow search engine crawlers
+# ─────────────────────────────────────────
+# Standard Search Engines
+# ─────────────────────────────────────────
 User-agent: *
 Allow: /
+Disallow: /assets/input.css
 
-# Allow AI crawlers for index/retrieval search features
+# ─────────────────────────────────────────
+# Google — Web Search + AI (Gemini / SGE)
+# ─────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+User-agent: Google-Extended
+Allow: /
+
+# ─────────────────────────────────────────
+# OpenAI — ChatGPT / GPT-4o Search
+# ─────────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Allow: /
 
+# ─────────────────────────────────────────
+# Anthropic — Claude AI
+# ─────────────────────────────────────────
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ─────────────────────────────────────────
+# Perplexity AI
+# ─────────────────────────────────────────
 User-agent: PerplexityBot
+Allow: /
+
+# ─────────────────────────────────────────
+# Apple — Siri & Spotlight AI Search
+# ─────────────────────────────────────────
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap link
+# ─────────────────────────────────────────
+# Meta — Llama AI
+# ─────────────────────────────────────────
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ─────────────────────────────────────────
+# Microsoft — Bing + Copilot AI
+# ─────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# ─────────────────────────────────────────
+# Cohere AI
+# ─────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ─────────────────────────────────────────
+# Amazon — Alexa / Rufus AI
+# ─────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ─────────────────────────────────────────
+# Other Major Search Engines
+# ─────────────────────────────────────────
+User-agent: Yandexbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ─────────────────────────────────────────
+# Sitemap Location
+# ─────────────────────────────────────────
 Sitemap: https://pltapcmr.edu.ph/sitemap.xml
+Sitemap: https://pltapcmr.edu.ph/llms.txt

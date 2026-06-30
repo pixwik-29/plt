@@ -1,0 +1,109 @@
+# PLT College of Medicine — llms.txt
+# Format: https://llmstxt.org/
+# This file helps AI language models understand the content and purpose of this website.
+
+> PLT College of Medicine (PLTCI APCMR) is a Commission on Higher Education (CHED)-accredited medical school located in Solano, Nueva Vizcaya, Philippines. It is Asia Pacific's first medical college situated within a premium wellness resort setting. The institution offers the Doctor of Medicine (M.D.) program, BS Pre-Medicine, and a supervised Rotating Internship year.
+
+## Key Information
+
+- **Full Name**: PLT College of Medicine (PLTCI Asia Pacific College of Medicine and Research)
+- **Location**: Barangay Bascaran, Solano, Nueva Vizcaya, Philippines 3709
+- **Website**: https://pltapcmr.edu.ph
+- **Contact**: info@pltci.org
+- **Accreditation**: Commission on Higher Education (CHED), Philippines
+- **Directory Listings**: World Directory of Medical Schools (WDOMS), FAIMER
+- **Facebook**: https://www.facebook.com/PLTCollegeOfficial/
+
+## Programs Offered
+
+### BS Pre-Medicine
+- Duration: 12 months (1 year)
+- Credential: Bachelor of Science in Biology (Pre-Medicine Track)
+- Purpose: Prerequisite foundation for students entering the M.D. program
+- Medium of Instruction: English
+
+### Doctor of Medicine (M.D.)
+- Duration: 4.5 years (54 months) of core medical coursework
+- Intake: January and July annual intakes
+- Medium of Instruction: English
+- Credential: Doctor of Medicine (M.D.)
+- Recognition: NMC (India) guidelines-compliant; USMLE-eligible graduates
+- Clinical training: Fully integrated clerkship rotations in affiliated government hospitals
+
+### Rotating Internship
+- Duration: 1 year mandatory post-M.D. clinical internship
+- Format: Rotational hospital postings across affiliated clinical centers
+- Purpose: Real-world clinical competency in all major medical disciplines
+
+## Total Program Duration
+5.5 years (BS Pre-Medicine + M.D. + Rotating Internship)
+
+## Eligibility & Admissions Criteria
+
+### For Indian National Students
+- NEET-qualified (valid NEET scorecard required)
+- Minimum 50% aggregate marks in Physics, Chemistry, and Biology (PCB) at 10+2 / pre-university level
+- English proficiency
+- Minimum age: 17 years at time of admission
+
+### For Filipino Students
+- Bachelor's degree (any field) from an accredited Philippine university
+- Completion of NMAT (National Medical Admission Test) or equivalent
+- Strong academic performance in science prerequisites
+
+## Clinical Training Affiliates
+
+### Region II Trauma & Medical Center (R2TMC)
+- Type: 600+ bed tertiary government teaching hospital
+- Location: Cauayan City, Isabela, Philippines (Region II)
+- Speciality: Primary trauma care facility for Region II (Cagayan Valley)
+- Clinical rotations: Surgery, Internal Medicine, Pediatrics, OB-GYN, Psychiatry, Emergency Medicine
+- Case volume: 50,000+ annual admissions providing extensive clinical exposure
+
+### PLTCI Louis A. Tiam Medical Center
+- On-campus hospital facility
+- Used for preclinical and early clinical training
+- Includes simulation labs and demonstration theaters
+
+### Nueva Vizcaya Provincial Government Hospital
+- District-level government hospital
+- Community medicine and primary care rotations
+
+## Campus & Environment
+
+PLT College of Medicine is uniquely located within the Asia Pacific College of Medicine and Research (APCMR) wellness resort in Solano, Nueva Vizcaya — a tranquil mountain setting with clean air, natural greenery, and therapeutic surroundings. This environment is designed to reduce academic stress and support student mental well-being throughout the rigorous medical curriculum.
+
+### Facilities
+- Modern lecture halls and anatomy laboratories
+- Simulation and clinical skills training centers
+- On-campus medical center (Louis A. Tiam Medical Center)
+- Resort-style accommodation and recreational facilities
+- High-speed internet throughout campus
+
+## Frequently Asked Questions
+
+**Q: Is PLT College of Medicine recognized by the Medical Council of India (NMC/MCI)?**
+A: Yes. PLT College of Medicine is listed in the World Directory of Medical Schools (WDOMS) and FAIMER, which are the primary requirements for NMC/MCI recognition. Indian graduates are eligible to appear for the Foreign Medical Graduate Examination (FMGE/NExT).
+
+**Q: Can graduates appear for the USMLE (United States Medical Licensing Exam)?**
+A: Yes. Graduates from WDOMS/FAIMER-listed schools are eligible to apply for USMLE Steps 1, 2, and 3.
+
+**Q: What is the annual tuition fee?**
+A: For current tuition and fee structure, contact the admissions office directly at info@pltci.org.
+
+**Q: When are admissions open?**
+A: The college accepts applications for January and July intakes. Interested students should contact the admissions office early to complete documentation requirements.
+
+**Q: Is hostel accommodation available?**
+A: Yes. On-campus accommodations are available within the wellness resort environment.
+
+## Pages
+
+- [Homepage](https://pltapcmr.edu.ph/): Full program overview, hero section, key stats
+- [Curriculum](https://pltapcmr.edu.ph/#programs): BS Pre-Medicine, M.D., Rotating Internship details
+- [Admissions](https://pltapcmr.edu.ph/#admissions): Eligibility criteria, required documents, process
+- [Campus](https://pltapcmr.edu.ph/#campus): Resort campus environment, affiliated hospitals
+- [Gallery](https://pltapcmr.edu.ph/#gallery): Campus and event photos
+- [FAQs](https://pltapcmr.edu.ph/#faqs): Common admissions and program questions
+- [Contact / Apply](https://pltapcmr.edu.ph/#contact): Inquiry form, admissions office contacts
+- [Sitemap](https://pltapcmr.edu.ph/sitemap.xml): Full XML sitemap
